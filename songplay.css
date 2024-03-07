@@ -1,0 +1,482 @@
+@media only screen and (max-width:640px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    .share {
+        z-index: 5;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0px;
+        background-color: rgba(0, 0, 0, 0.5);
+        left: 0px;
+        padding: 0px;
+        display: none;
+    }
+
+    .shareIcon {
+        z-index: 7;
+        width: 100%;
+        height: 50px;
+        background-color: rgba(255, 255, 255, 0.8);
+        position: absolute;
+        bottom: 20%;
+        left: 0px;
+        display: none;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .forwardIcon {
+        color: white;
+    }
+
+    .mainTop {
+        width: 100%;
+        position: relative;
+        top: 0px;
+        height: 100%;
+
+
+    }
+    .upper{height: 85%;}
+
+    body {
+        background: url(music/kesariyabg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0px 2px;
+        overflow-x: hidden;
+       
+        padding-top: 5%;
+    }
+
+
+    .mainFoot {
+        width: 100%;
+height: auto;
+        padding: 0px;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        background: linear-gradient(90deg, rgba(124, 60, 171, 1), rgba(223, 44, 243, 1));
+    }
+
+    .text {
+        font-family: 'Poppins', sans-serif;
+        color: rgb(255, 255, 255);
+        padding-left: 15px;
+    }
+
+    .row {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .icon img {
+        width: 100%;
+    }
+
+    .searchIcon input {
+        border: none;
+        width: 40%;
+    }
+
+    .searchIcon {
+        border: 1px solid grey;
+        color: rgb(0, 0, 0);
+        padding: 2px 5px;
+        width: 80%;
+        border-radius: 5%;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .col {
+        text-align: center;
+    }
+
+    .icon1 {
+        width: 15%;
+    }
+
+    .icon2 {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .icon3 {
+        width: 10%;
+        padding-top: 4px;
+    }
+
+    .footer {
+        margin: 10px 0px;
+
+        width: 100%;
+    }
+
+    .home {
+        border-radius: 50%;
+        background-color: white;
+        padding: 5px;
+        box-shadow: 1px 1px 5px black;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    .heading {
+        font-family: 'Poppins', sans-serif;
+        color: rgb(255, 255, 255);
+        font-size: .8rem;
+        padding-left: 25px;
+        margin-top: -10px;
+    }
+
+    .copy {
+        font-family: 'Poppins', sans-serif;
+        color: rgb(120, 120, 120);
+        font-size: .7rem;
+        padding-left: 25px;
+        margin-top: -10px;
+    }
+
+    .back {
+        color: rgb(255, 255, 255);
+    }
+
+    .play {
+        border-radius: 50%;
+        background-color: white;
+        padding: 5px;
+        box-shadow: 1px 1px 5px black;
+        width: 45px;
+        height: 45px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+
+    .forward {
+        color: rgb(255, 255, 255);
+    }
+
+    .hearts {
+        color: rgb(255, 255, 255);
+    }
+
+    .share1 {
+        color: rgb(255, 255, 255);
+    }
+
+    .row2 {
+        width: 90%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: baseline;
+        padding-left: 33px;
+
+
+    }
+
+    .rect1 {
+        height: 90px;
+        width: 12px;
+        background-color: rgb(124, 60, 171, 1);
+        transform-origin: bottom;
+        animation: high 1s ease-in-out infinite alternate paused;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .rect2 {
+        height: 70px;
+        width: 12px;
+        background-color: rgb(131, 59, 176);
+        transform-origin: bottom;
+        animation: high 1s ease-in-out infinite alternate paused;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .rect3 {
+        height: 95px;
+        width: 12px;
+        background-color: rgb(137, 58, 181);
+        transform-origin: bottom;
+        animation: low 1s ease-in-out infinite alternate paused;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .rect4 {
+        height: 110px;
+        width: 12px;
+        background-color: rgb(144, 57, 185);
+        transform-origin: bottom;
+        animation: high 1s ease-in-out infinite alternate paused;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .rect5 {
+        height: 100px;
+        width: 12px;
+        background-color: rgb(150, 56, 190);
+        transform-origin: bottom;
+        animation: low 1s ease-in-out infinite alternate paused;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .rect6 {
+        height: 95px;
+        width: 12px;
+        background-color: rgb(157, 55, 195);
+        transform-origin: bottom;
+        animation: high 1s ease-in-out infinite alternate paused;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .rect7 {
+        height: 80px;
+        width: 12px;
+        background-color: rgb(164, 54, 200);
+        transform-origin: bottom;
+        animation: low 1s ease-in-out infinite alternate paused;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .rect8 {
+        height: 90px;
+        width: 12px;
+        background-color: rgb(170, 53, 205);
+        transform-origin: bottom;
+        animation: high 1s ease-in-out infinite alternate paused;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .rect9 {
+        height: 60px;
+        width: 12px;
+        background-color: rgb(177, 51, 209);
+        transform-origin: bottom;
+        animation: low 1s ease-in-out infinite alternate paused;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .rect10 {
+        height: 80px;
+        width: 12px;
+        background-color: rgb(183, 50, 214);
+        transform-origin: bottom;
+        animation: high 1s ease-in-out infinite alternate paused;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .rect11 {
+        height: 90px;
+        width: 12px;
+        background-color: rgb(190, 49, 219);
+        transform-origin: bottom;
+        animation: high 1s ease-in-out infinite alternate paused;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .rect12 {
+        height: 110px;
+        width: 12px;
+        background-color: rgb(197, 48, 224);
+        transform-origin: bottom;
+        animation: low 1s ease-in-out infinite alternate paused;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .rect13 {
+        height: 70px;
+        width: 12px;
+        background-color: rgb(203, 47, 229);
+        transform-origin: bottom;
+        animation: high 1s ease-in-out infinite alternate paused;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+
+    .rect14 {
+        height: 80px;
+        width: 12px;
+        background-color: rgb(203, 47, 229);
+        transform-origin: bottom;
+        animation: low 1s ease-in-out infinite alternate paused;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .rect15 {
+        height: 100px;
+        width: 12px;
+        background-color: rgb(210, 46, 233);
+        transform-origin: bottom;
+        animation: high 1s ease-in-out infinite alternate paused;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .rect16 {
+        height: 95px;
+        width: 12px;
+        background-color: rgb(223, 44, 243);
+        transform-origin: bottom;
+        animation: low 1s ease-in-out infinite alternate paused;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+
+    @keyframes high {
+        0% {
+            left: 0px;
+            top: 0px;
+            border-radius: 0px;
+            transform: scaleY(1);
+        }
+
+        15% {
+            left: 0px;
+            top: 0px;
+            border-radius: 0px;
+            transform: scaleY(1.1);
+        }
+
+        30% {
+            left: 0px;
+            top: 0px;
+            border-radius: 0px;
+            transform: scaleY(1.2);
+        }
+
+        45% {
+            left: 0px;
+            top: 0px;
+            border-radius: 0px;
+            transform: scaleY(1.3);
+        }
+
+        70% {
+            left: 0px;
+            top: 0px;
+            border-radius: 0px;
+
+            transform: scaleY(1.2);
+        }
+
+        85% {
+            left: 0px;
+            top: 0px;
+            border-radius: 0px;
+            transform: scaleY(1.1);
+        }
+
+        100% {
+            left: 0px;
+            top: 0px;
+            border-radius: 0px;
+            transform: scaleY(1);
+        }
+    }
+
+
+    @keyframes low {
+        0% {
+            left: 0px;
+            top: 0px;
+            border-radius: 0px;
+            transform: scaleY(1);
+        }
+
+        15% {
+            left: 0px;
+            top: 0px;
+            border-radius: 0px;
+            transform: scaleY(.9);
+        }
+
+        30% {
+            left: 0px;
+            top: 0px;
+            border-radius: 0px;
+            transform: scaleY(.8);
+        }
+
+        45% {
+            left: 0px;
+            top: 0px;
+            border-radius: 0px;
+            transform: scaleY(.7);
+        }
+
+        70% {
+            left: 0px;
+            top: 0px;
+            border-radius: 0px;
+            transform: scaleY(.8);
+        }
+
+        85% {
+            left: 0px;
+            top: 0px;
+            border-radius: 0px;
+            transform: scaleY(.9);
+        }
+
+        100% {
+            left: 0px;
+            top: 0px;
+            border-radius: 0px;
+            transform: scaleY(1);
+        }
+    }
+}
+@media only screen and (max-width:375px){
+    .mainTop{height: 667px;}
+    .upper{height: 90%;overflow-y: scroll;}
+}
