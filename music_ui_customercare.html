@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media only screen and (max-width:640px) {
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                background-color: #070707;
+            }
+
+            .container {
+                width: 100%;
+                padding: 0px 2px;
+                overflow-x: hidden;
+                height: 100%;
+                padding-top: 5%;
+                position: sticky;
+                top: 0%;
+                z-index: 3;
+                background-color: black;
+            }
+
+            .mainTop {
+                width: 100%;
+                position: relative;
+                top: 0px;
+            }
+
+            .upper {
+                height: 85%;
+            }
+
+            .mainFoot {
+                width: 100%;
+                padding: 0px;
+                position: fixed;
+                bottom: 0px;
+                left: 0px;
+                background: linear-gradient(90deg, rgba(124, 60, 171, 1), rgba(223, 44, 243, 1));
+            }
+
+            .text {
+                font-family: 'Poppins', sans-serif;
+                color: rgb(255, 255, 255);
+                padding-left: 15px;
+            }
+
+            .row {
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            .icon img {
+                width: 100%;
+            }
+
+            .searchIcon input {
+                border: none;
+                width: 40%;
+
+            }
+
+            .searchIcon {
+                border: 1px solid grey;
+                color: rgb(0, 0, 0);
+                padding: 2px 5px;
+                width: 80%;
+                border-radius: 5%;
+                background-color: rgb(255, 255, 255);
+            }
+
+            .col {
+                text-align: center;
+            }
+
+            .icon1 {
+                width: 15%;
+            }
+
+            .icon2 {
+                width: 60%;
+                display: flex;
+                justify-content: center;
+            }
+
+            .icon3 {
+                width: 10%;
+                padding-top: 4px;
+            }
+
+            .footer {
+                margin: 10px 0px;
+                width: 100%;
+            }
+
+            .home {
+                border-radius: 50%;
+                background-color: white;
+                padding: 5px;
+                box-shadow: 1px 1px 5px black;
+            }
+
+            .image {
+                padding-left: 24px;
+                padding-top: 50px;
+            }
+
+            .heading {
+                font-family: 'Poppins', sans-serif;
+                color: rgb(255, 255, 255);
+                font-size: .8rem;
+                padding-left: 25px;
+            }
+
+            .heading1 {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                font-style: normal;
+                color: rgb(255, 255, 255);
+                font-size: .8.1rem;
+                padding-left: 25px;
+            }
+
+
+            .row2 {
+                width: 100%;
+                padding-left: 0px;
+            }
+
+            .customercare {
+                padding-left: 15px;
+            }
+
+            .text4 {
+                margin-left: -15px;
+                margin-top: -10px;
+            }
+
+
+            .copy1 {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                font-style: normal;
+                color: rgb(0, 0, 0);
+                font-size: .9rem;
+                padding-top: 5px;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            .copy2 {
+                font-family: 'Poppins', sans-serif;
+                color: rgb(0, 0, 0);
+                font-size: .8rem;
+                margin-top: -15px;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .col3 {
+                display: flex;
+            }
+
+            .text {
+                align-items: center;
+                justify-content: center;
+            }
+
+            .underline {
+                text-decoration: underline;
+            }
+
+            .box1 {
+                width: 92%;
+                height: auto;
+                border: 2px solid purple;
+                background-color: white;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 10px 0px;
+                box-sizing: border-box;
+            }
+
+            .box2 {
+                width: 92%;
+                height: auto;
+                border: 2px solid purple;
+                background-color: white;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 10px 0px;
+                box-sizing: border-box;
+                
+            }
+
+            .mainbox {
+                padding-top: 5px;
+                padding-left: 25px;
+                
+            }
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dfd85ede10.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="mainTop">
+        <div class="upper">
+            <div class="container">
+                <!-- menu start -->
+                <div class="menu row">
+                    <div class="col icon icon1">
+                        <img src="music/logo.png">
+                    </div>
+                    <div class="col icon icon2">
+                        <div class="searchIcon text">
+                            <input type="text">
+                            <span><i class="fa fa-search">&nbsp; &nbsp;</i>Search</span>
+                        </div>
+                    </div>
+                    <div class="col icon icon3">
+                        <a href="music_ui_profile.html"><img src="music/profile.png"></a>
+                    </div>
+                </div>
+                <br>
+
+                <!-- menu end -->
+            </div>
+        </div>
+        <div class="heading1">
+            <p>Customer care</p>
+        </div>
+        <div class="mainbox">
+            <div class="box1">
+                <div class="text">
+                    <div class="copy1">
+                        <p>Can’t find the solution you’re <br>
+                            looking for?</p>
+                    </div>
+                    <div class="copy2">
+                        <p>Here’s how to get help from our experts.
+                            Note: We currently don’t offer support by
+                            phone.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mainbox">
+            <div class="box2">
+                <div class="text">
+                    <div class="copy1 underline">
+                        <p>The Buddy Community</p>
+                    </div>
+                    <div class="copy2">
+                        <p>Post or search on our buddycommunity,
+                            where listeners help out and share ideas
+                            and solutions..</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mainbox">
+            <div class="box2">
+                <div class="text">
+                    <div class="copy1 underline">
+                        <p>Send a message</p>
+                    </div>
+                    <div class="copy2">
+                        <p>Message Us and one of our customer
+                            service experts will help you out.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mainbox">
+            <div class="box2">
+                <div class="text">
+                    <div class="copy1 underline">
+                        <p>Facebook</p>
+                    </div>
+                    <div class="copy2">
+                        <p>Send us a direct message from our
+                            Buddycares Facebook Page.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mainFoot">
+            <!-- footer start -->
+            <div class="footer row">
+                <!-- <div class="rectangle">
+                <img src="music/rectangle.png">
+            </div> -->
+                <div class="library">
+                    <a href="music_ui_library.html"><img src="music/library.png" alt=""></a>
+                </div>
+                <div class="heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="home">
+                    <a href="index.html"><i class="fa-solid fa-house" style="color: black;"></i></a>
+                </div>
+                <div class="shuffle">
+                    <i class="fa-solid fa-shuffle"></i>
+                </div>
+                <div class="notification">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+            </div>
+            <!-- footer end -->
+        </div>
+    </div>
+</body>
+
+</html>

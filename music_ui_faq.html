@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media only screen and (max-width:640px) {
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                background-color: #070707;
+                padding: 0px;
+                margin: 0px;
+
+            }
+
+            .box {
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                box-sizing: border-box;
+                padding: 0px;
+
+            }
+
+            .top {
+                height: 17.5%;
+                margin-top: 20px;
+            }
+
+            .mid {
+                width: 100%;
+                height: 80%;
+                overflow: scroll;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-direction: column;
+                box-sizing: border-box;
+
+            }
+
+            .mainFoot {
+                width: 100%;
+                height: 6.5%;
+                padding: 0px;
+                box-sizing: border-box;
+                background: linear-gradient(90deg, rgba(124, 60, 171, 1), rgba(223, 44, 243, 1));
+
+            }
+
+            .text {
+                font-family: 'Poppins', sans-serif;
+                color: rgb(255, 255, 255);
+                padding-left: 15px;
+            }
+
+            .row {
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            .icon img {
+                width: 100%;
+            }
+
+            .footer {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            .searchIcon input {
+                border: none;
+                width: 40%;
+
+            }
+
+            .searchIcon {
+                border: 1px solid grey;
+                color: rgb(0, 0, 0);
+                padding: 2px 5px;
+                width: 80%;
+                border-radius: 5%;
+                background-color: rgb(255, 255, 255);
+            }
+
+            .col {
+                text-align: center;
+            }
+
+            .icon1 {
+                width: 15%;
+            }
+
+            .icon2 {
+                width: 60%;
+                display: flex;
+                justify-content: center;
+            }
+
+            .icon3 {
+                width: 10%;
+                padding-top: 4px;
+            }
+
+            .footer {
+
+                width: 100%;
+            }
+
+            .home {
+                border-radius: 50%;
+                background-color: white;
+                padding: 5px;
+                box-shadow: 1px 1px 5px black;
+            }
+
+            .image {
+                padding-left: 24px;
+                padding-top: 50px;
+            }
+
+            .heading {
+                font-family: 'Poppins', sans-serif;
+                color: rgb(255, 255, 255);
+                font-size: .8rem;
+                padding-left: 25px;
+            }
+
+            .heading1 {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                font-style: normal;
+                color: rgb(255, 255, 255);
+                font-size: .8.1rem;
+                padding-left: 25px;
+            }
+
+
+            .row2 {
+                width: 100%;
+                padding-left: 0px;
+            }
+
+
+            .copy1 {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                font-style: normal;
+                color: rgb(0, 0, 0);
+                font-size: .9rem;
+                padding-top: 10px;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            .col3 {
+                display: flex;
+            }
+
+            .text2 {
+                font-family: 'Poppins', sans-serif;
+                margin-top: 2px;
+                color: rgb(255, 255, 255);
+                font-size: .8rem;
+                color: black;
+               
+
+            }
+
+
+            .arrow {
+                transform: rotate(180deg);
+
+            }
+
+            .faqmain {
+                width: 80%;
+                height: auto;
+                border: 2px solid purple;
+                background-color: white;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 10px 0px;
+                box-sizing: border-box;
+                
+            }
+
+            .faqbtn {
+                cursor: pointer;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                width: 100%;
+
+            }
+            .faqbtn .faqLeft{width:90%;display: flex;
+                justify-content: flex-start;
+                align-items: center;
+            padding-left: 5px;}
+            .faqbtn .faqRight{width:10%; display: flex;
+                justify-content: center;
+                align-items: center;}
+
+
+            .faqpara {
+                font-family: 'Poppins', sans-serif;
+                font-style: normal;
+                color: rgb(0, 0, 0);
+                font-size: .7rem;
+                padding-top: 5px;
+                display: none;
+
+            }
+
+            .faqpara1 {
+                font-family: 'Poppins', sans-serif;
+                font-style: normal;
+                color: rgb(0, 0, 0);
+                font-size: .7rem;
+                padding: 10px;
+                text-align: justify;
+                display: block;
+
+            }
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dfd85ede10.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="box">
+        <div class="top">
+            <!-- menu start -->
+            <div class="menu row">
+                <div class="col icon icon1">
+                    <img src="music/logo.png">
+                </div>
+                <div class="col icon icon2">
+                    <div class="searchIcon text">
+                        <input type="text">
+                        <span><i class="fa fa-search">&nbsp; &nbsp;</i>Search</span>
+                    </div>
+                </div>
+                <div class="col icon icon3">
+                    <a href="music_ui_profile.html"><img src="music/profile.png"></a>
+                </div>
+            </div>
+            <br>
+            <div class="heading1">
+                <p>Faqs</p>
+            </div>
+            <!-- menu end -->
+
+        </div>
+        <div class="mid">
+            <div class="faqmain">
+                <div class="faqbtn" onclick="abc(this)">
+                <div class="faqLeft">
+                    <span class="text2">Why can't I log in to Buddy?</span>
+                </div>
+                <div class="faqRight">
+                    <img src="music/arrowup.png" id="arrow">
+                </div>
+                </div>
+                <div class="faqpara">
+                    <p>If you're unable to log in to your account, let’s start with some basic troubleshooting to
+                        try and help out here:
+                        Check that you have an active internet connection.
+                        Make sure you’re on the right login screen:- If you created your account with a username and
+                        password, enter those and tap LOG IN.- If you created your account with Facebook, tap LOG IN
+                        WITH FACEBOOK.
+                        - If you created an account with your phone number, keep in mind that it's not possible to
+                        log onto the desktop app with a phone number. We'd suggest using the mobile app instead.
+                        - You can also log in through the username field by using the email address linked to your
+                        Buddy account, and your correct password.
+                        If you’re a Free user, you can only use Buddy abroad for 14 days at a time:- Reconnect to
+                        Buddy from the country you signed up in, or change your country settings.
+                        Close and reopen the app.
+                        Restart the device you’re using Buddy on.
+                        Reinstall Buddy.</p>
+                </div>
+            </div>
+
+            <div class="faqmain">
+                <div class="faqbtn" onclick="abc(this)">
+                    <div class="faqLeft">
+                    <span class="text2">How do I delete my Buddy Account?</span>
+                </div>
+            <div class="faqRight">
+                    <img src="music/arrowup.png" id="arrow">
+                </div>
+                </div>
+                <div class="faqpara">
+                    <p>Maybe you have a duplicate account, maybe you just need a break from Buddy or you want to start
+                        fresh with a new account? No hard feelings!
+                        In case you just want to stop paying, you can and use Buddy free instead.
+                        If you don't have Premium you can close your account permanently yourself. Just log in here and
+                        continue through the steps.
+                        Keep the following things in mind:
+                        Your username can’t be used with Buddy again.
+                        You won't have access to your playlists, followers, and everything saved in .
+                        You’ll lose access to any purchased audiobooks if you close your account and delete your data.
+                        If you have the student discount, you won’t be able to apply it to another account until
+                        12-months have elapsed since you signed up for it.</p>
+                </div>
+            </div>
+
+            <div class="faqmain">
+                <div class="faqbtn" onclick="abc(this)">
+                    <div class="faqLeft">
+                    <span class="text2">How do I cancel my subscription?</span>
+                </div>
+                <div class="faqRight">
+                    <img src="music/arrowup.png" id="arrow">
+                    </div>
+                </div>
+                <div class="faqpara">
+                    <p>Cancel your Premium plan any time on your account page.
+                        Log into Buddy.com/account.
+                        Under Your plan, click CHANGE PLAN.
+                        Scroll to Buddy Free and click CANCEL PREMIUM.
+                        Your Premium stays until your next billing date, then your account switches to free.
+                        You keep your playlists and saved music when your account is free. You can also still log in and
+                        play with ads.</p>
+                </div>
+            </div>
+
+            <div class="faqmain">
+                <div class="faqbtn" onclick="abc(this)">
+                    <div class="faqLeft">
+                    <span class="text2">Why can't I log in to Buddy?</span>
+                    </div>
+                    <div class="faqRight">
+                    <img src="music/arrowup.png" id="arrow">
+                    </div>
+                </div>
+                <div class="faqpara">
+                    <p>If you're unable to log in to your account, let’s start with some basic troubleshooting to
+                        try and help out here:
+                        Check that you have an active internet connection.
+                        Make sure you’re on the right login screen:- If you created your account with a username and
+                        password, enter those and tap LOG IN.- If you created your account with Facebook, tap LOG IN
+                        WITH FACEBOOK.
+                        - If you created an account with your phone number, keep in mind that it's not possible to
+                        log onto the desktop app with a phone number. We'd suggest using the mobile app instead.
+                        - You can also log in through the username field by using the email address linked to your
+                        Buddy account, and your correct password.
+                        If you’re a Free user, you can only use Buddy abroad for 14 days at a time:- Reconnect to
+                        Buddy from the country you signed up in, or change your country settings.
+                        Close and reopen the app.
+                        Restart the device you’re using Buddy on.
+                        Reinstall Buddy.</p>
+                </div>
+            </div>
+
+            <div class="faqmain">
+                <div class="faqbtn" onclick="abc(this)">
+                    <div class="faqLeft">
+                    <span class="text2">How do I change my email address?</span>
+                    </div>
+                    <div class="faqRight">
+                    <img src="music/arrowup.png" id="arrow">
+                    </div>
+                </div>
+                <div class="faqpara">
+                    <p>To change your email address:<br>
+                        1. Log in to your account page.<br>
+                        2. Click EDIT PROFILE.<br>
+                        3. Under Email, enter your new email address.<br>
+                        4. Confirm your password.<br>
+                        5. Click SAVE PROFILE.<br>
+                        And you're done! A confirmation email will be sent to both the old and new email address
+                        detailing the changes.</p>
+                </div>
+            </div>
+
+            <div class="faqmain">
+                <div class="faqbtn" onclick="abc(this)">
+                    <div class="faqLeft">
+                    <span class="text2">How do I reset my password?</span>
+                    </div>
+                    <div class="faqRight">
+                    <img src="music/arrowup.png" id="arrow">
+                    </div>
+                </div>
+                <div class="faqpara">
+                    <p>Reset your password<br>
+                        1. Log out of the Buddy app and website.<br>
+                        2. Go to the password reset page.<br>
+                        3. Enter your email address or username in Email address or username.<br>
+                        4. Click SEND.<br>
+                        5. Check your email inbox for an email from us with the subject “Reset your password”.<br>
+                        6. Click the link in the e-mail.<br>
+                        7. Type your new password in New password.<br>
+                        8. Type your new password again in Repeat new password.<br>
+                        9. Click SET PASSWORD.<br>
+
+                        Change your password
+                        1. Go to the password change page.<br>
+                        2. Type your current password in Current password.<br>
+                        3. Type your new password in New password.<br>
+                        4. Type your new password in Repeat new password.<br>
+                        5. Click SET NEW PASSWORD.</p>
+                </div>
+            </div>
+
+            <div class="faqmain">
+                <div class="faqbtn" onclick="abc(this)">
+                    <div class="faqLeft">
+                    <span class="text2">How can I pay for Buddy?</span>
+                    </div>
+                    <div class="faqRight">
+                    <img src="music/arrowup.png" id="arrow">
+                    </div>
+                </div>
+                <div class="faqpara">
+                    <p>You can pay for Buddy in a variety of different ways, depending on where you live.
+                        To check the payment methods available in your country:
+                        Log in to your account page.
+                        Click Subscription in the menu on the left.Note: If you’re on the free, ad-supported service,
+                        you’ll need to click GET PREMIUM. (Don’t worry, that won’t sign you up for Premium.)
+                        Some of the most common available payment methods are the following:
+                        Recurring (paid on a monthly basis):
+                        Credit/debit card, provided the country in which they were issued matches the country of your
+                        Buddy account
+                        Pre-paid cards (including PaySafeCard) issued by Visa, MasterCard, American Express, and
+                        Discover.
+                        PayPal, provided that you have a credit/debit card linked to your PayPal account (you can’t use
+                        the money in your PayPal account)
+                        Via Mobile (head here* for more info for your country)</p>
+                </div>
+            </div>
+
+            <div class="faqmain">
+                <div class="faqbtn" onclick="abc(this)">
+                    <div class="faqLeft">
+                    <span class="text2">Why am I still being charged after
+                        cancelling my subscription?</span>
+                        </div>
+                        <div class="faqRight">
+                    <img src="music/arrowup.png" id="arrow">
+                    </div>
+                </div>
+                <div class="faqpara">
+                    <p> If you get a Buddy charge after canceling your subscription, follow these steps:
+                        Log in to your account page.
+                        Click Subscription in the menu on the left.
+                        If your subscription status is Free, you may have a second account with Buddy. It's worth
+                        checking your email inboxes to see if you have any Buddy emails - that can mean that your extra
+                        account is registered with that email.
+                        If you don't have another email address, note how you log into the Buddy app usually:
+                        If you use your Facebook details try using the blue "Log in with Facebook button."
+                        If you use your Buddy username try entering your username or email address.
+                        Once you've logged in, try the cancel process again and ensure you reach the final confirmation
+                        screen.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="mainFoot">
+            <!-- footer start -->
+            <div class="footer row">
+                <!-- <div class="rectangle">
+                <img src="music/rectangle.png">
+            </div> -->
+                <div class="library">
+                    <a href="music_ui_library.html"><img src="music/library.png" alt=""></a>
+                </div>
+                <div class="heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="home">
+                    <a href="index.html"><i class="fa-solid fa-house" style="color: black;"></i></a>
+                </div>
+                <div class="shuffle">
+                    <i class="fa-solid fa-shuffle"></i>
+                </div>
+                <div class="notification">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+            </div>
+            <!-- footer end -->
+        </div>
+    </div>
+    <script>
+        function abc(x) {
+            x.nextElementSibling.classList.toggle("faqpara1");
+            document.getElementById("arrow").classList.toggle("arrow");
+        }
+    </script>
+</body>
+
+</html>

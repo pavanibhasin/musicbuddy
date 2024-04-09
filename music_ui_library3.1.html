@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media only screen and (max-width:640px) {
+            * {
+                box-sizing: border-box;
+            }
+
+            .mainTop {
+                width: 100%;
+                position: relative;
+                top: 0px;
+
+            }
+
+            .upper {
+                height: 85%;
+            }
+
+            body {
+                background: url(music/jawaanisongbg.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .container {
+                width: 100%;
+                padding: 0px 2px;
+                overflow-x: hidden;
+                height: 100%;
+                padding-top: 5%;
+            }
+
+
+            .mainFoot {
+                width: 100%;
+                height: auto;
+                padding: 0px;
+                position: fixed;
+                bottom: 0px;
+                left: 0px;
+                background: linear-gradient(90deg, rgba(124, 60, 171, 1), rgba(223, 44, 243, 1));
+            }
+
+            .text {
+                font-family: 'Poppins', sans-serif;
+                color: rgb(255, 255, 255);
+                padding-left: 15px;
+            }
+
+            .row {
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            .icon img {
+                width: 100%;
+            }
+
+            .searchIcon input {
+                border: none;
+                width: 40%;
+            }
+
+            .searchIcon {
+                border: 1px solid grey;
+                color: rgb(0, 0, 0);
+                padding: 2px 5px;
+                width: 80%;
+                border-radius: 5%;
+                background-color: rgb(255, 255, 255);
+            }
+
+            .col {
+                text-align: center;
+            }
+
+            .icon1 {
+                width: 15%;
+            }
+
+            .icon2 {
+                width: 60%;
+                display: flex;
+                justify-content: center;
+            }
+
+            .icon3 {
+                width: 10%;
+                padding-top: 4px;
+            }
+
+            .footer {
+                margin: 10px 0px;
+
+                width: 100%;
+            }
+
+            .home {
+                border-radius: 50%;
+                background-color: white;
+                padding: 5px;
+                box-shadow: 1px 1px 5px black;
+            }
+
+            .image {
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 15px;
+            }
+
+            .figure {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .heading {
+                font-family: 'Poppins', sans-serif;
+                color: rgb(255, 255, 255);
+                font-size: .8rem;
+                margin-top:2px;
+
+            }
+
+            .copy {
+                font-family: 'Poppins', sans-serif;
+                color: rgb(120, 120, 120);
+                font-size: .7rem;
+                margin-top: -10px;
+
+            }
+
+
+            .back {
+                color: rgb(255, 255, 255);
+            }
+
+            .play {
+                border-radius: 50%;
+                background-color: white;
+                padding: 5px;
+                box-shadow: 1px 1px 5px black;
+                width: 45px;
+                height: 45px;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+            }
+
+
+            .forward {
+                color: rgb(255, 255, 255);
+            }
+
+            .hearts {
+                color: rgb(255, 255, 255);
+            }
+
+            .share {
+                color: rgb(255, 255, 255);
+            }
+
+            .row2 {
+                width: 90%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: baseline;
+                padding-left: 33px;
+
+
+            }
+
+            .share {
+                z-index: 5;
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                top: 0px;
+                background-color: rgba(0, 0, 0, 0.5);
+                left: 0px;
+                padding: 0px;
+                display: none;
+            }
+
+            .shareIcon {
+                z-index: 7;
+                width: 100%;
+                height: 40px;
+                background-color: rgba(52, 52, 52, 0.8);
+                position: absolute;
+                bottom: 10%;
+                left: 0px;
+                padding-top: 6px;
+                display: none;
+                justify-content: space-evenly;
+                align-items: center;
+
+            }
+
+            .forwardicon {
+                color: white;
+            }
+
+
+            .like {
+                color: black;
+            }
+
+            .rect1 {
+                height: 90px;
+                width: 12px;
+                background-color: rgb(124, 60, 171, 1);
+                transform-origin: bottom;
+                animation: high 1s ease-in-out infinite alternate paused;
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+
+            .rect2 {
+                height: 70px;
+                width: 12px;
+                background-color: rgb(131, 59, 176);
+                transform-origin: bottom;
+                animation: high 1s ease-in-out infinite alternate paused;
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+
+            .rect3 {
+                height: 95px;
+                width: 12px;
+                background-color: rgb(137, 58, 181);
+                transform-origin: bottom;
+                animation: low 1s ease-in-out infinite alternate paused;
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+
+            .rect4 {
+                height: 110px;
+                width: 12px;
+                background-color: rgb(144, 57, 185);
+                transform-origin: bottom;
+                animation: high 1s ease-in-out infinite alternate paused;
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+
+            .rect5 {
+                height: 100px;
+                width: 12px;
+                background-color: rgb(150, 56, 190);
+                transform-origin: bottom;
+                animation: low 1s ease-in-out infinite alternate paused;
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+
+            .rect6 {
+                height: 95px;
+                width: 12px;
+                background-color: rgb(157, 55, 195);
+                transform-origin: bottom;
+                animation: high 1s ease-in-out infinite alternate paused;
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+
+            .rect7 {
+                height: 80px;
+                width: 12px;
+                background-color: rgb(164, 54, 200);
+                transform-origin: bottom;
+                animation: low 1s ease-in-out infinite alternate paused;
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+
+            .rect8 {
+                height: 90px;
+                width: 12px;
+                background-color: rgb(170, 53, 205);
+                transform-origin: bottom;
+                animation: high 1s ease-in-out infinite alternate paused;
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+
+            .rect9 {
+                height: 60px;
+                width: 12px;
+                background-color: rgb(177, 51, 209);
+                transform-origin: bottom;
+                animation: low 1s ease-in-out infinite alternate paused;
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+
+            .rect10 {
+                height: 80px;
+                width: 12px;
+                background-color: rgb(183, 50, 214);
+                transform-origin: bottom;
+                animation: high 1s ease-in-out infinite alternate paused;
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+
+            .rect11 {
+                height: 90px;
+                width: 12px;
+                background-color: rgb(190, 49, 219);
+                transform-origin: bottom;
+                animation: high 1s ease-in-out infinite alternate paused;
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+
+            .rect12 {
+                height: 110px;
+                width: 12px;
+                background-color: rgb(197, 48, 224);
+                transform-origin: bottom;
+                animation: low 1s ease-in-out infinite alternate paused;
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+
+            .rect13 {
+                height: 70px;
+                width: 12px;
+                background-color: rgb(203, 47, 229);
+                transform-origin: bottom;
+                animation: high 1s ease-in-out infinite alternate paused;
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+
+
+            .rect14 {
+                height: 80px;
+                width: 12px;
+                background-color: rgb(203, 47, 229);
+                transform-origin: bottom;
+                animation: low 1s ease-in-out infinite alternate paused;
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+
+            .rect15 {
+                height: 100px;
+                width: 12px;
+                background-color: rgb(210, 46, 233);
+                transform-origin: bottom;
+                animation: high 1s ease-in-out infinite alternate paused;
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+
+            .rect16 {
+                height: 95px;
+                width: 12px;
+                background-color: rgb(223, 44, 243);
+                transform-origin: bottom;
+                animation: low 1s ease-in-out infinite alternate paused;
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+            }
+
+
+            @keyframes high {
+                0% {
+                    left: 0px;
+                    top: 0px;
+                    border-radius: 0px;
+                    transform: scaleY(1);
+                }
+
+                15% {
+                    left: 0px;
+                    top: 0px;
+                    border-radius: 0px;
+                    transform: scaleY(1.1);
+                }
+
+                30% {
+                    left: 0px;
+                    top: 0px;
+                    border-radius: 0px;
+                    transform: scaleY(1.2);
+                }
+
+                45% {
+                    left: 0px;
+                    top: 0px;
+                    border-radius: 0px;
+                    transform: scaleY(1.3);
+                }
+
+                70% {
+                    left: 0px;
+                    top: 0px;
+                    border-radius: 0px;
+
+                    transform: scaleY(1.2);
+                }
+
+                85% {
+                    left: 0px;
+                    top: 0px;
+                    border-radius: 0px;
+                    transform: scaleY(1.1);
+                }
+
+                100% {
+                    left: 0px;
+                    top: 0px;
+                    border-radius: 0px;
+                    transform: scaleY(1);
+                }
+            }
+
+
+            @keyframes low {
+                0% {
+                    left: 0px;
+                    top: 0px;
+                    border-radius: 0px;
+                    transform: scaleY(1);
+                }
+
+                15% {
+                    left: 0px;
+                    top: 0px;
+                    border-radius: 0px;
+                    transform: scaleY(.9);
+                }
+
+                30% {
+                    left: 0px;
+                    top: 0px;
+                    border-radius: 0px;
+                    transform: scaleY(.8);
+                }
+
+                45% {
+                    left: 0px;
+                    top: 0px;
+                    border-radius: 0px;
+                    transform: scaleY(.7);
+                }
+
+                70% {
+                    left: 0px;
+                    top: 0px;
+                    border-radius: 0px;
+                    transform: scaleY(.8);
+                }
+
+                85% {
+                    left: 0px;
+                    top: 0px;
+                    border-radius: 0px;
+                    transform: scaleY(.9);
+                }
+
+                100% {
+                    left: 0px;
+                    top: 0px;
+                    border-radius: 0px;
+                    transform: scaleY(1);
+                }
+            }
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dfd85ede10.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="shareIcon" id="shareIcon">
+        <div class="smicons col">
+            <img src="music/fb.png" alt="">
+        </div>
+        <div class="smicons col">
+            <img src="music/whatsapp.png" alt="">
+        </div>
+        <div class="smicons col">
+            <img src="music/insta.png" alt="">
+        </div>
+        <div class="smicons col">
+            <img src="music/copylink.png" alt="">
+        </div>
+        <div class="smicons col">
+            <img src="music/more.png" alt="">
+        </div>
+    </div>
+    <div class="share" id="share" onclick="shareclose(this)">
+    </div>
+    <div class="mainTop">
+        <div class="upper">
+            <div class="container">
+                <!-- menu start -->
+                <div class="menu row">
+                    <div class="col icon icon1">
+                        <img src="music/logo.png">
+                    </div>
+                    <div class="col icon icon2">
+                        <div class="searchIcon text">
+                            <input type="text">
+                            <span><i class="fa fa-search">&nbsp; &nbsp;</i>Search</span>
+                        </div>
+                    </div>
+                    <div class="col icon icon3">
+                        <a href="music_ui_profile.html"><img src="music/profile.png"></a>
+                    </div>
+                </div>
+                <br>
+                <!-- menu end -->
+            </div>
+            <!-- image and text starting -->
+            <div class="figure">
+                <figure>
+                    <img src="music/jawaanisongimg.png">
+                    <figcaption>
+                        <p class="heading">The Jawaani Song (Student Of The Year 2)</p>
+                        <p class="copy">Vishal & Shekhar, Vishal Dadlani, Payal Dev and
+                            Kishore Kumar</p>
+                    </figcaption>
+                </figure>
+            </div>
+
+            <!-- image and text end -->
+            <br>
+            <br>
+            <!-- audio waves start -->
+            <div class="row2">
+                <div class="audiowaves">
+                    <div class="rect1 col high">
+                    </div>
+                </div>
+                <div class="audiowaves">
+                    <div class="rect2 col low">
+                    </div>
+                </div>
+                <div class="audiowaves">
+                    <div class="rect3 col high">
+                    </div>
+                </div>
+                <div class="audiowaves">
+                    <div class="rect4 col low">
+                    </div>
+                </div>
+                <div class="audiowaves">
+                    <div class="rect5 col high">
+                    </div>
+                </div>
+                <div class="audiowaves">
+                    <div class="rect6 col low">
+                    </div>
+                </div>
+                <div class="audiowaves">
+                    <div class="rect7 col high">
+                    </div>
+                </div>
+                <div class="audiowaves">
+                    <div class="rect8 col low">
+                    </div>
+                </div>
+                <div class="audiowaves">
+                    <div class="rect9 col high">
+                    </div>
+                </div>
+                <div class="audiowaves">
+                    <div class="rect10 col low">
+                    </div>
+                </div>
+                <div class="audiowaves">
+                    <div class="rect11 col high">
+                    </div>
+                </div>
+                <div class="audiowaves">
+                    <div class="rect12 col low">
+                    </div>
+                </div>
+                <div class="audiowaves">
+                    <div class="rect13 col high">
+                    </div>
+                </div>
+                <div class="audiowaves">
+                    <div class="rect14 col low">
+                    </div>
+                </div>
+                <div class="audiowaves">
+                    <div class="rect15 col high">
+                    </div>
+                </div>
+                <div class="audiowaves">
+                    <div class="rect16 col low">
+                    </div>
+                </div>
+            </div>
+            <!-- audio waves end -->
+            <br>
+            <br>
+            <!-- icons start 1 -->
+            <div class="row">
+                <div class="10back col">
+                    <img src="music/10back.png">
+                </div>
+                <div class="back col">
+                    <i class="fa-solid fa-backward-fast"></i></a>
+                </div>
+                <div class="play col" onclick="abc()">
+                    <audio src="music/jawaanisong.mp3" id="apnabanale"></audio>
+                    <i class="fa-solid fa-play" style="font-size: 1.5rem;" id="playPause"></i>
+                </div>
+                <div class="forward col">
+                    <a href="music_ui_library3.2.html" class="forwardicon"><i class="fa-solid fa-forward-fast"></i></a>
+                </div>
+                <div class="10back col">
+                    <img src="music/10forward.png">
+                </div>
+            </div>
+            <!-- icons end 1-->
+            <br>
+            <!-- icons start 2 -->
+            <div class="row">
+                <div class="playagain col">
+                    <img src="music/playagain.png">
+                </div>
+                <div class="download col">
+                    <img src="music/download.png">
+                </div>
+                <div class="hearts col">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="share1 col" onclick="share()">
+                    <img src="music/share.png">
+                </div>
+            </div>
+            <!-- icons end 2-->
+            <div class="mainFoot">
+                <!-- footer start -->
+                <div class="footer row">
+                    <!-- <div class="rectangle">
+                <img src="music/rectangle.png">
+            </div> -->
+                    <div class="library">
+                        <a href="music_ui_library.html"><img src="music/library.png" alt=""></a>
+                    </div>
+                    <div class="heart">
+                        <a href="music_ui_liked_songs.html" class="like"><i class="fa-solid fa-heart"></i></a>
+                    </div>
+                    <div class="home">
+                        <a href="index.html"><i class="fa-solid fa-house" style="color: black;"></i></a>
+                    </div>
+                    <div class="shuffle">
+                        <i class="fa-solid fa-shuffle"></i>
+                    </div>
+                    <div class="notification">
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+                </div>
+                <!-- footer end -->
+            </div>
+        </div>
+
+        <script>
+            let x = document.getElementById("playPause");
+            let high = document.querySelectorAll(".high")
+            let low = document.querySelectorAll(".low")
+            function abc() {
+                if (x.className == "fa-solid fa-play") {
+
+                    document.getElementById("apnabanale").play();
+                    document.getElementById("playPause").classList.replace("fa-play", "fa-pause");
+                    high.forEach(function (z) { z.style.animationPlayState = "running"; })
+                    low.forEach(function (a) { a.style.animationPlayState = "running"; })
+
+                }
+
+
+                else {
+                    document.getElementById("apnabanale").pause();
+                    document.getElementById("playPause").classList.replace("fa-pause", "fa-play");
+                    high.forEach(function (b) { b.style.animationPlayState = "paused"; })
+                    low.forEach(function (c) { c.style.animationPlayState = "paused"; })
+                }
+
+            }
+
+            function share() {
+                document.getElementById("share").style.display = "block";
+                document.getElementById("shareIcon").style.display = "flex";
+
+            }
+
+            function shareclose(x) {
+                x.style.display = "none";
+                document.getElementById("shareIcon").style.display = "none";
+            }
+        </script>
+</body>
+
+</html>

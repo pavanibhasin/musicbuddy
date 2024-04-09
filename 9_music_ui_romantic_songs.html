@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media only screen and (max-width:640px) {
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                background-color:  #070707;
+            }
+
+            .container {
+                width: 100%;
+                padding: 0px 2px;
+                overflow-x: hidden;
+                height: 100%;
+                padding-top: 5%;
+            }
+
+            .mainTop {
+                width: 100%;
+
+
+                position: relative;
+                top: 0px;
+            }
+
+            .mainFoot {
+                width: 100%;
+                padding: 0px;
+                position: fixed;
+                bottom: 0px;
+                left: 0px;
+                background: linear-gradient(90deg, rgba(124, 60, 171, 1), rgba(223, 44, 243, 1));
+            }
+
+            .text {
+                font-family: 'Poppins', sans-serif;
+                color: rgb(255, 255, 255);
+                padding-left: 15px;
+            }
+
+            .row {
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            .icon img {
+                width: 100%;
+            }
+
+            .searchIcon input {
+                border: none;
+                width: 40%;
+
+            }
+
+            .searchIcon {
+                border: 1px solid grey;
+                color: rgb(0, 0, 0);
+                padding: 2px 5px;
+                width: 80%;
+                border-radius: 5%;
+                background-color: rgb(255, 255, 255);
+            }
+
+            .col {
+                text-align: center;
+            }
+
+            .icon1 {
+                width: 15%;
+            }
+
+            .icon2 {
+                width: 60%;
+                display: flex;
+                justify-content: center;
+            }
+
+            .icon3 {
+                width: 10%;
+                padding-top: 4px;
+            }
+
+            .footer {
+                margin: 10px 0px;
+                width: 100%;
+            }
+
+            .home {
+                border-radius: 50%;
+                background-color: white;
+                padding: 5px;
+                box-shadow: 1px 1px 5px black;
+            }
+
+            .image {
+                padding-left: 24px;
+                padding-top: 50px;
+            }
+
+            .heading {
+                font-family: 'Poppins', sans-serif;
+                color: rgb(255, 255, 255);
+                font-size: .8rem;
+                padding-left: 25px;
+            }
+            .heading1 {
+                font-family: 'Poppins', sans-serif;
+                color: rgb(255, 255, 255);
+                font-size: .8.1rem;
+                padding-left: 20px;
+            }
+            .copy {
+                font-family: 'Poppins', sans-serif;
+                color: rgb(120, 120, 120);
+                font-size: .7rem;
+                padding-left: 25px;
+            }
+
+            .row2 {
+                width: 100%;
+                padding-left: 0px;
+             
+            }
+
+            .romantic {
+                padding-left: 15px;
+            }
+
+            .text4 {
+                margin-left: -15px;
+                margin-top: -10px;
+            }
+
+            .heading {
+                font-family: 'Poppins', sans-serif;
+                color: rgb(255, 255, 255);
+                font-size: .8rem;
+
+            }
+
+            .copy {
+                font-family: 'Poppins', sans-serif;
+                color: rgb(120, 120, 120);
+                font-size: .7rem;
+                margin-top: -15px;
+            }
+
+            .col3 {
+                display: flex;
+            }
+            .like{color: black;}
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dfd85ede10.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="mainTop">
+        <div class="container">
+            <!-- menu start -->
+            <div class="menu row">
+                <div class="col icon icon1">
+                    <img src="music/logo.png">
+                </div>
+                <div class="col icon icon2">
+                    <div class="searchIcon text">
+                        <input type="text">
+                        <span><i class="fa fa-search">&nbsp; &nbsp;</i>Search</span>
+                    </div>
+                </div>
+                <div class="col icon icon3">
+                    <a href="music_ui_profile.html"><img src="music/profile.png"></a>
+                </div>
+            </div>
+            <br>
+            <!-- menu end -->
+        </div>
+        <!-- romantic songs list start -->
+        <div class="heading1">
+            <p>Romantic</p>
+        </div>
+        <div class="row2">
+            <div class="romantic col2">
+                <div class="col3">
+                    <a href="10_music_ui_romantic_ranjha.html"><img src="music/35.png"></a>
+                    <div class="text4">
+                        <div class="heading">
+                            <p>Ranjha</p>
+                        </div>
+                        <div class="copy">
+                            <p>Shershaah</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+           
+            <div class="romantic col2">
+                <div class="col3">
+                    <a href="11_music_ui_romantic_shayad.html"><img src="music/36.png"></a>
+                    <div class="text4">
+                        <div class="heading">
+                            <p>Shayad</p>
+                        </div>
+                        <div class="copy">
+                            <p>Love Aaj Kal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+           
+            <div class="romantic col2">
+                <div class="col3">
+                    <a href="12_music_ui_romantic_humsafar.html"><img src="music/37.png"></a>
+                    <div class="text4">
+                        <div class="heading">
+                            <p>Humsafar</p>
+                        </div>
+                        <div class="copy">
+                            <p>Badrinath Ki Dulhaniya</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            
+            <div class="romantic col2">
+                <div class="col3">
+                    <a href="13_music_ui_romantic_naina.html"><img src="music/38.png"></a>
+                    <div class="text4">
+                        <div class="heading">
+                            <p>Nain Ta Heere</p>
+                        </div>
+                        <div class="copy">
+                            <p>Jug Jug Jeeyo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            
+            <div class="romantic col2">
+                <div class="col3">
+                    <a href="14_music_ui_romantic_qafirana.html"><img src="music/39.png"></a>
+                    <div class="text4">
+                        <div class="heading">
+                            <p>Qaafirana</p>
+                        </div>
+                        <div class="copy">
+                            <p>Kedarnath</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+           
+        </div>
+    </div>
+    <!-- romantic songs list start -->
+    <div class="mainFoot">
+        <!-- footer start -->
+        <div class="footer row">
+            <!-- <div class="rectangle">
+                <img src="music/rectangle.png">
+            </div> -->
+            <div class="library">
+                <a href="music_ui_library.html"><img src="music/library.png" alt=""></a>
+            </div>
+            <div class="heart">
+                <a href="music_ui_liked_songs.html" class="like"><i class="fa-solid fa-heart"></i></a>
+            </div>
+            <div class="home">
+                <a href="index.html"><i class="fa-solid fa-house" style="color: black;"></i></a>
+            </div>
+            <div class="shuffle">
+                <i class="fa-solid fa-shuffle"></i>
+            </div>
+            <div class="notification">
+                <i class="fa-solid fa-bell"></i>
+            </div>
+        </div>
+        <!-- footer end -->
+    </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media only screen and (max-width:640px) {
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                background-color: #070707;
+                padding: 0px;
+                margin: 0px;
+
+            }
+
+            .box {
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                box-sizing: border-box;
+                padding: 0px;
+
+            }
+
+            .top {
+                height: 10%;
+                margin-top: 20px;
+            
+            }
+
+            .mid {
+                width: 100%;
+                height: 85%;
+                overflow: scroll;
+                padding-left: 25px;
+                justify-content: flex-start;
+        
+                flex-direction: column;
+                box-sizing: border-box;
+
+            }
+
+            .mainFoot {
+                width: 100%;
+                height: 6%;
+                padding: 0px;
+                box-sizing: border-box;
+                background: linear-gradient(90deg, rgba(124, 60, 171, 1), rgba(223, 44, 243, 1));
+
+            }
+
+            .text {
+                font-family: 'Poppins', sans-serif;
+                color: rgb(255, 255, 255);
+              
+            }
+
+            .row {
+                width: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                
+            }
+
+            .icon img {
+                width: 100%;
+            }
+
+            .favourite,
+            .categories,
+            .trending,
+            .recommended,
+            .pop {
+                overflow-x: scroll;
+                justify-content: flex-start;
+               
+            }
+
+            .favourite .col,
+            .categories .col,
+            .trending .col,
+            .recommended .col,
+            .pop .col {
+                margin-left: 15px;
+            }
+
+            .searchIcon input {
+                border: none;
+                width: 40%;
+
+            }
+
+            .searchIcon {
+                border: 1px solid grey;
+                color: rgb(0, 0, 0);
+                padding: 2px 5px;
+                width: 80%;
+                border-radius: 5%;
+                background-color: rgb(255, 255, 255);
+            }
+
+            .col {
+                text-align: center;
+                
+            }
+
+            .icon1 {
+                width: 15%;
+            }
+
+            .icon2 {
+                width: 60%;
+                display: flex;
+                justify-content: center;
+            }
+
+            .icon3 {
+                width: 10%;
+                padding-top: 4px;
+            }
+
+            .footer {
+                margin: 10px 0px;
+                width: 100%;
+
+            }
+
+            .home {
+                border-radius: 50%;
+                background-color: white;
+                padding: 5px;
+                box-shadow: 1px 1px 5px black;
+            }
+
+            .like {
+                color: black;
+            }
+       
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dfd85ede10.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="box">
+        <div class="top">
+            <!-- menu start -->
+            <div class="menu row">
+                <div class="col icon icon1">
+                    <img src="music/logo.png">
+                </div>
+                <div class="col icon icon2">
+                    <div class="searchIcon text">
+                        <input type="text">
+                        <span><i class="fa fa-search">&nbsp; &nbsp;</i>Search</span>
+                    </div>
+                </div>
+                <div class="col icon icon3">
+                    <a href="music_ui_profile.html"><img src="music/profile.png"></a>
+                </div>
+            </div>
+            <br>
+            <!-- menu end -->
+
+        </div>
+        <div class="mid">
+            <div class="text">
+                <p>Your Favourite</p>
+            </div>
+            <div class="favourite row">
+                <div class="col fav">
+                    <a href="2_music_ui_fav_kesariya.html"><img src="music/1.png"></a>
+                </div>
+                <div class="col fav">
+                    <a href="3_music_ui_fav_pathaan.html"><img src="music/2.png"></a>
+                </div>
+                <div class="col fav">
+                    <a href="4_music_ui_fav_apnabanale.html"><img src="music/3.png"></a>
+                </div>
+                <div class="col fav">
+                    <a href="5_music_ui_fav_jawaanisong.html"><img src="music/4.png"></a>
+                </div>
+                <div class="col fav">
+                    <a href="6_music_ui_fav_matargasthi.html"><img src="music/5.png"></a>
+                </div>
+                <div class="col fav">
+                    <a href="7_music_ui_fav_apnatimeayega.html"><img src="music/6.png"></a>
+                </div>
+                <div class="col fav">
+                    <a href="8_music_ui_fav_terabanjaunga.html"><img src="music/7.png"></a>
+                </div>
+            </div>
+            <!-- fav end -->
+            <!-- categories start -->
+            <div class="text">
+                <p>Categories</p>
+            </div>
+            <div class="categories row">
+                <div class="col categ">
+                    <a href="9_music_ui_romantic_songs.html"><img src="music/8.png"></a>
+                </div>
+                <div class="col categ">
+                    <a href="15_music_ui_party_songs.html"><img src="music/9.png"></a>
+                </div>
+                <div class="col categ">
+                    <a href="21_music_ui_devotional_songs.html"><img src="music/10.png"></a>
+                </div>
+                <div class="col categ">
+                    <a href="27_music_ui_retro_songs.html"><img src="music/11.png"></a>
+                </div>
+                <div class="col categ">
+                    <a href="33_music_ui_workout_songs.html"><img src="music/12.png"></a>
+                </div>
+                <div class="col categ">
+                    <a href="39_music_ui_hollywood_songs.html"><img src="music/13.png"></a>
+                </div>
+                <div class="col categ">
+                    <a href="45_music_ui_tollywood_songs.html"><img src="music/14.png"></a>
+                </div>
+            </div>
+
+            <!-- categories end -->
+            <!-- trending start -->
+            <div class="text">
+                <p>Trending</p>
+            </div>
+            <div class="trending row">
+                <div class="col trend">
+                    <a href="51_music_ui_trending_mainikllagaddileke.html"><img src="music/15.png"></a>
+                </div>
+                <div class="col trend">
+                    <a href="52_music_ui_trending_besharamrang.html"><img src="music/16.png"></a>
+                </div>
+                <div class="col trend">
+                    <a href="53_music_ui_trending_sunsajni.html"><img src="music/17.png"></a>
+                </div>
+                <div class="col trend">
+                    <a href="54_music_ui_trending_rabbajanda.html"><img src="music/18.png"></a>
+                </div>
+                <div class="col trend">
+                    <a href="55_music_ui_trending_dilkatelephone.html"><img src="music/19.png"></a>
+                </div>
+                <div class="col trend">
+                    <a href="56_music_ui_trending_dilonkidoriyaan.html"><img src="music/20.png"></a>
+                </div>
+                <div class="col trend">
+                    <a href="57_music_ui_trending_mundasona.html"><img src="music/21.png"></a>
+                </div>
+            </div>
+            <!-- trending end -->
+            <!-- Recommended start -->
+            <div class="text">
+                <p>Recommended</p>
+            </div>
+            <div class="recommended row">
+                <div class="col recom">
+                    <a href="58_music_ui_recomended_balampichkari.html"><img src="music/22.png"></a>
+                </div>
+                <div class="col recom">
+                    <a href="59_music_ui_recomended_bulleya.html"><img src="music/23.png"></a>
+                </div>
+                <div class="col recom">
+                    <a href="60_music_ui_recomended_nazmnazm.html"><img src="music/24.png"></a>
+                </div>
+                <div class="col recom">
+                    <a href="61_music_ui_recomended_channamerya.html"><img src="music/25.png"></a>
+                </div>
+                <div class="col recom">
+                    <a href="62_music_ui_recomended_zindabanda.html"><img src="music/26.png"></a>
+                </div>
+                <div class="col recom">
+                    <a href="63_music_ui_recomended_panidarang.html"><img src="music/27.png"></a>
+                </div>
+                <div class="col recom">
+                    <a href="64_music_ui_recomended_nagadasangdhol.html"><img src="music/28.png"></a>
+                </div>
+            </div>
+            <!-- Recommended end -->
+            <!-- popular artist start -->
+            <div class="text">
+                <p>Popular Artist</p>
+            </div>
+            <div class="pop row">
+                <div class="col ">
+                    <a href="music_ui_pop_artsist1.html"><img src="music/29.png"></a>
+                </div>
+                <div class="col ">
+                    <a href="music_ui_pop_artsist2.html"><img src="music/30.png"></a>
+                </div>
+                <div class="col ">
+                    <a href="music_ui_pop_artsist3.html"><img src="music/31.png"></a>
+                </div>
+                <div class="col ">
+                    <a href="music_ui_pop_artsist4.html"><img src="music/32.png"></a>
+                </div>
+                <div class="col ">
+                    <a href="music_ui_pop_artsist5.html"><img src="music/33.png"></a>
+                </div>
+                <div class="col ">
+                    <a href="music_ui_pop_artsist6.html"><img src="music/34.png"></a>
+                </div>
+            </div>
+            <!-- popular artist end -->
+
+
+        </div>
+        <div class="mainFoot">
+            <!-- footer start -->
+            <div class="footer row">
+                <!-- <div class="rectangle">
+                <img src="music/rectangle.png">
+            </div> -->
+                <div class="library">
+                    <a href="music_ui_library.html"><img src="music/library.png" alt=""></a>
+                </div>
+                <div class="heart">
+                    <a href="music_ui_liked_songs.html"><i class="fa-solid fa-heart" style="color: black;"></i></a>
+                </div>
+                <div class="home">
+                    <a href="index.html"><i class="fa-solid fa-house" style="color: black;"></i></a>
+                </div>
+                <div class="shuffle">
+                    <i class="fa-solid fa-shuffle"></i>
+                </div>
+                <div class="notification">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+            </div>
+            <!-- footer end -->
+        </div>
+    </div>
+    <script>
+        function abc(x) {
+            x.nextElementSibling.classList.toggle("faqpara1");
+            document.getElementById("arrow").classList.toggle("arrow");
+        }
+    </script>
+</body>
+
+</html>
