@@ -13,30 +13,36 @@
 
             body {
                 background-color: #070707;
-                margin:0px;
-                padding:0px;
+                padding: 0px;
+                margin: 0px;
+
             }
 
-            .container {
+            .box {
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                box-sizing: border-box;
+                padding: 0px;
+
+            }
+
+            .top {
+                height: 17.5%;
+                margin-top: 20px;
+              
+            }
+
+            .mid {
                 width: 100%;
-                padding: 0px 2px;
-                overflow-x: hidden;
-                height: auto;
-                padding-top: 5%;
-                position: sticky;
-                top: 0%;
-                z-index: 3;
-                background-color: black;
-            }
+                height: 74%;
+                overflow: scroll;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-direction: column;
+                box-sizing: border-box;
 
-            .mainTop {
-                width: 100%;
-                position: relative;
-                top: 0px;
-            }
-
-            .upper {
-                height: 85%;
             }
 
             .mainFoot {
@@ -137,7 +143,7 @@
             }
 
             .Likedsongs {
-                padding-left: 15px;
+                padding-left: 25px;
             }
 
             .text4 {
@@ -174,32 +180,31 @@
 </head>
 
 <body>
-    <div class="mainTop">
-        <div class="upper">
-            <div class="container">
-                <!-- menu start -->
-                <div class="menu row">
-                    <div class="col icon icon1">
-                        <img src="music/logo.png">
-                    </div>
-                    <div class="col icon icon2">
-                        <div class="searchIcon text">
-                            <input type="text">
-                            <span><i class="fa fa-search">&nbsp; &nbsp;</i>Search</span>
-                        </div>
-                    </div>
-                    <div class="col icon icon3">
-                        <a href="music_ui_profile.html"><img src="music/profile.png"></a>
+    <div class="box">
+        <div class="top">
+            <!-- menu start -->
+            <div class="menu row">
+                <div class="col icon icon1">
+                    <img src="music/logo.png">
+                </div>
+                <div class="col icon icon2">
+                    <div class="searchIcon text">
+                        <input type="text">
+                        <span><i class="fa fa-search">&nbsp; &nbsp;</i>Search</span>
                     </div>
                 </div>
-                <br>
-                <!-- menu end -->
-                <div class="heading1">
-                    <p>Downloaded Songs</p>
+                <div class="col icon icon3">
+                    <a href="music_ui_profile.html"><img src="music/profile.png"></a>
                 </div>
             </div>
-            <!-- romantic songs list start -->
+            <br>
+            <div class="heading1">
+                <p>Downloaded Songs</p>
+            </div>
+            <!-- menu end -->
 
+        </div>
+        <div class="mid">
             <div class="row2">
                 <div class="Likedsongs col2">
                     <div class="col3">
@@ -215,7 +220,7 @@
                     </div>
                 </div>
                 <br>
-               
+
                 <div class="Likedsongs col2">
                     <div class="col3">
                         <a href="music_ui_downloaded2.html"><img src="music/100.png"></a>
@@ -230,7 +235,7 @@
                     </div>
                 </div>
                 <br>
-              
+
                 <div class="Likedsongs col2">
                     <div class="col3">
                         <a href="music_ui_downloaded3.html"><img src="music/101.png"></a>
@@ -245,7 +250,7 @@
                     </div>
                 </div>
                 <br>
-              
+
                 <div class="Likedsongs col2">
                     <div class="col3">
                         <a href="music_ui_downloaded4.html"><img src="music/102.png"></a>
@@ -260,7 +265,7 @@
                     </div>
                 </div>
                 <br>
-              
+
                 <div class="Likedsongs col2">
                     <div class="col3">
                         <a href="music_ui_downloaded5.html"><img src="music/103.png"></a>
@@ -275,7 +280,7 @@
                     </div>
                 </div>
                 <br>
-              
+
                 <div class="Likedsongs col2">
                     <div class="col3">
                         <a href="music_ui_downloaded6.html"><img src="music/110.png"></a>
@@ -290,7 +295,7 @@
                     </div>
                 </div>
                 <br>
-             
+
                 <div class="Likedsongs col2">
                     <div class="col3">
                         <a href="music_ui_downloaded7.html"><img src="music/111.png"></a>
@@ -305,7 +310,7 @@
                     </div>
                 </div>
                 <br>
-               
+
                 <div class="Likedsongs col2">
                     <div class="col3">
                         <a href="music_ui_downloaded8.html"><img src="music/112.png"></a>
@@ -320,7 +325,7 @@
                     </div>
                 </div>
                 <br>
-              
+
                 <div class="Likedsongs col2">
                     <div class="col3">
                         <a href="music_ui_downloaded9.html"><img src="music/113.png"></a>
@@ -335,7 +340,7 @@
                     </div>
                 </div>
                 <br>
-             
+
                 <div class="Likedsongs col2">
                     <div class="col3">
                         <a href="music_ui_downloaded10.html"><img src="music/114.png"></a>
@@ -350,7 +355,7 @@
                     </div>
                 </div>
                 <br>
-                
+
                 <div class="Likedsongs col2">
                     <div class="col3">
                         <a href="music_ui_downloaded11.html"><img src="music/115.png"></a>
@@ -367,7 +372,6 @@
             </div>
         </div>
     </div>
-    <!-- romantic songs list start -->
     <div class="mainFoot">
         <!-- footer start -->
         <div class="footer row">
@@ -390,9 +394,15 @@
                 <i class="fa-solid fa-bell"></i>
             </div>
         </div>
+        <!-- footer end -->
     </div>
-    <!-- footer end -->
     </div>
+    <script>
+        function abc(x) {
+            x.nextElementSibling.classList.toggle("faqpara1");
+            document.getElementById("arrow").classList.toggle("arrow");
+        }
+    </script>
 </body>
 
 </html>
